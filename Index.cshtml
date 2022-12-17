@@ -1,0 +1,23 @@
+﻿@model IEnumerable < Football_League.Models.match>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Football League</h1>
+</h2>Create account</h2>
+@Html.ActionLink("Create new account","create")
+@foreach (var b in Model)
+{
+    <p> MatchID :@b.MatchID</p>
+    <p>TeamName1:@b.Teamname1</p>
+    <p>TeamName2 :@b.Teamname2</p>
+    <p>Status:@b.StatusTeam</p>
+    <p>WinningTeam:@b.Teamname1 WinningTeam</p> 
+}
+
+
+
+
+
+
+
